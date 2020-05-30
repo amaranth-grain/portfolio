@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavItem from "react-bootstrap/NavItem";
 import NavButton from "../buttons/NavButton";
+import { LinkContainer } from "react-router-bootstrap";
 import Logo from "../../../img/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 class NavigationBar extends Component {
   render() {
@@ -19,15 +22,14 @@ class NavigationBar extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            {/* Nav.Link wrapper necessary for mobile menu to collapse on click. */}
-            <Nav.Link eventKey="1">
-              <NavButton name="About" url="/" />
+            <Nav.Link eventKey="1" as={NavLink} to="/projects" exact className="mx-auto px-4">
+              Projects
             </Nav.Link>
-            <Nav.Link eventKey="2">
-              <NavButton name="Projects" url="/projects" />
+						<Nav.Link eventKey="2" as={NavLink} to="/contact" exact className="mx-auto px-4">
+              Contact
             </Nav.Link>
-            <Nav.Link eventKey="3">
-              <NavButton name="Contact" url="/contact" />
+						<Nav.Link eventKey="3" as={NavLink} to="/" exact className="mx-auto px-4 d-block d-sm-none">
+              About
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

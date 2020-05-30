@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 5em 0;
 	overflow-x: hidden;
 	background-color: rgb(236, 236, 236);
 	color: rgb(73, 73, 73);
@@ -20,6 +20,14 @@ code {
 }
 .row {
 	width: 100%;
+}
+.footer-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(161, 161, 161);
+  text-align: center;
 }
 .plain-link {
 	text-decoration: none;
@@ -112,7 +120,7 @@ code {
 /* Media Queries */
 @media (max-width: 575px) {
 	.logo-container {
-		padding-left: 2em;
+		padding-left: 2.5em;
 	}
 	.plain-link {
 		margin: 0 auto;

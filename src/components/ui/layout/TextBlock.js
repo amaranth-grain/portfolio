@@ -10,11 +10,12 @@ class TextBlock extends Component {
           <h5 className="content-title text-left">{title}</h5>
           <div className="text-left content-info mt-4">
             <p>I'm a full stack developer & new grad.</p>
-            <p>I love working with modern frameworks like React or Laravel.</p>
+            <p>I love working with modern libraries and frameworks like React or Laravel.</p>
             <p>
-              I'm passionate about helping women succeed in tech. Highlights
-              include organising talk panels and coordinating mock interviews as the
-              co-executive to Women in Computing.
+              I'm passionate about helping women succeed in tech as well. 
+							Highlights
+              include organising talk panels and coordinating mock interview events as the
+              co-executive to BCIT Women in Computing.
             </p>
             <p>I'm also a dog mom, hiker, and tabletop gamer.</p>
 						<OrangeButton text="Download Resume" />

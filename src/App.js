@@ -5,6 +5,7 @@ import NavigationBar from "./components/ui/layout/NavigationBar";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
 import Redirect from "./components/config/Redirect";
+import Footer from "./components/ui/layout/Footer";
 
 class App extends Component {
   render() {
@@ -59,7 +60,12 @@ class App extends Component {
             path="/splash"
             render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/Splash-Works" />}
           />	
+					<Route
+            path="/portfolio"
+            render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/portfolio" />}
+          />
         </Switch>
+				<Footer />
       </BrowserRouter>
     );
   }

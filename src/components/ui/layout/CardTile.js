@@ -14,7 +14,7 @@ class CardTile extends Component {
       nameR,
     } = this.props;
     return (
-      <Card className="col-10 offset-1 col-md-6 offset-md-3 col-lg-4 offset-lg-0 my-3">
+      <Card className="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 my-3">
         <Card.Img variant="top" src={img} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
