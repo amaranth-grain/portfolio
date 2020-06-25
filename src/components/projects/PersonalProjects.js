@@ -3,6 +3,7 @@ import CardTile from "../ui/layout/CardTile";
 import ShopImg from "../../img/shop.png";
 import SiteV01 from "../../img/site-v01.png";
 import SiteV02 from "../../img/site-v02.png";
+import PokedexAppImg from "../../img/pokedex-app01.png";
 
 class PersonalProjects extends Component {
   render() {
@@ -18,6 +19,15 @@ class PersonalProjects extends Component {
             demoLink="/shop"
             codeLink="https://github.com/amaranth-grain/online-store"
             text="Made an online store for a loved one with React, Bootstrap, and JS ES6."
+          />
+					<CardTile
+            img={PokedexAppImg}
+            title="Pokedex Web App"
+            hasDemo={true}
+            hasCode={true}
+            demoLink="https://pokedex-amaranthgrain.herokuapp.com/home.html"
+            codeLink="https://github.com/amaranth-grain/pokedex-app"
+            text="Web app created with TypeScript, Webpack, HTML, Materialize, PokeAPI."
           />
           <CardTile
             img={SiteV01}

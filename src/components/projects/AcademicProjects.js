@@ -31,11 +31,11 @@ class AcademicProjects extends Component {
 					<CardTile
             img={KbaseImg}
             title="LinkedIn-esque Web App"
-            hasDemo={false}
+            hasDemo={true}
             hasCode={true}
-            demoLink=""
+            demoLink="https://s-knowledge-base.herokuapp.com/login"
             codeLink="/kb"
-            text="Primarily completed controller logic for web app. Used MVC model, HTML, CSS, Handlebars, and Node.js / Express."
+            text="Completed controller logic and front-end templates. Used Node/Express, SQL, and Handlebars."
           />
         </div>
       </div>

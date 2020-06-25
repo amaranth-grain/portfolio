@@ -16,10 +16,6 @@ class App extends Component {
           <Route exact path="/" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
-          <Route
-            path="/cbc"
-            render={(props) => <Redirect {...props} url="https://www.cbc.ca/" />}
-          />
 					<Route
             path="/github"
             render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain" />}
@@ -45,6 +41,10 @@ class App extends Component {
             render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/MediKey" />}
           />
 					<Route
+            path="/garment"
+            render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/Python-OOP-Projects/tree/master/Assignments/Assignment%204" />}
+          />
+					<Route
             path="/one-der"
             render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/Python-OOP-Projects/blob/master/Assignments/Assignment%202/" />}
           />
@@ -63,6 +63,14 @@ class App extends Component {
 					<Route
             path="/portfolio"
             render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/portfolio" />}
+          />
+					<Route
+            path="/pokedex-app"
+            render={(props) => <Redirect {...props} url="https://pokedex-amaranthgrain.herokuapp.com/home.html" />}
+          />
+					<Route
+            path="/kb-demo"
+            render={(props) => <Redirect {...props} url="https://s-knowledge-base.herokuapp.com/login" />}
           />
         </Switch>
 				<Footer />
