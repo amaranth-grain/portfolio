@@ -4,6 +4,7 @@ import About from "./components/pages/About";
 import NavigationBar from "./components/ui/layout/NavigationBar";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
+import Coop from "./components/pages/Coop";
 import Redirect from "./components/config/Redirect";
 import Footer from "./components/ui/layout/Footer";
 
@@ -16,6 +17,7 @@ class App extends Component {
           <Route exact path="/" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route path="/co-op" component={Coop} />
 					<Route
             path="/github"
             render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain" />}
@@ -71,6 +73,14 @@ class App extends Component {
 					<Route
             path="/kb-demo"
             render={(props) => <Redirect {...props} url="https://s-knowledge-base.herokuapp.com/login" />}
+          />
+					<Route
+            path="/twitterbot"
+            render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/aws-rekognition-twitterbot" />}
+          />
+					<Route
+            path="/inventory-api"
+            render={(props) => <Redirect {...props} url="https://github.com/amaranth-grain/inventory-tracker-api" />}
           />
         </Switch>
 				<Footer />

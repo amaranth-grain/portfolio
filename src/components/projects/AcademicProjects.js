@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import CardTile from "../ui/layout/CardTile";
 import HandyParkImg from "../../img/handypark.jpg";
-import PokedexImg from "../../img/pokemon.png"
+import PokedexImg from "../../img/pokemon.png";
 import KbaseImg from "../../img/kbase.png";
+import TwitterBotImg from "../../img/twitterbot.png";
 
 class AcademicProjects extends Component {
 	render() {
@@ -18,6 +19,15 @@ class AcademicProjects extends Component {
             demoLink=""
             codeLink="/handypark"
             text="Integrated Google APIs with Android mobile app to display disability parking within x radius of destination location."
+          />
+					<CardTile
+            img={TwitterBotImg}
+            title="Celebrity Twitterbot"
+            hasDemo={false}
+            hasCode={true}
+            demoLink=""
+            codeLink="https://github.com/amaranth-grain/aws-rekognition-twitterbot"
+            text="Used Lambda to automatically analyse S3 Bucket hosted photos and tweet celebrities based on AWS Rekognition API."
           />
 					<CardTile
             img={PokedexImg}

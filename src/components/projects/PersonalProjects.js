@@ -4,6 +4,8 @@ import ShopImg from "../../img/shop.png";
 import SiteV01 from "../../img/site-v01.png";
 import SiteV02 from "../../img/site-v02.png";
 import PokedexAppImg from "../../img/pokedex-app01.png";
+import FirebaseImg from "../../img/firebase.png";
+import ChartsImg from "../../img/highcharts.png";
 
 class PersonalProjects extends Component {
   render() {
@@ -46,6 +48,24 @@ class PersonalProjects extends Component {
             demoLink=""
             codeLink="/portfolio"
             text="The site you're looking at right now!  Created with React, Bootstrap, and JS ES6."
+          />
+					<CardTile
+            img={FirebaseImg}
+            title="Inventory Tracker API"
+            hasDemo={false}
+            hasCode={true}
+            demoLink=""
+            codeLink="/inventory-api"
+            text="Created protected auth, user, inventory routes with serverless Firebase functions."
+          />
+					<CardTile
+            img={ChartsImg}
+            title="HighCharts"
+            hasDemo={true}
+            hasCode={false}
+            demoLink="/co-op"
+            codeLink=""
+            text="Fun little revamp of my program's co-op admission grades with HighCharts API."
           />
         </div>
       </div>
